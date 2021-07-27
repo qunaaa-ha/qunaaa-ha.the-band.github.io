@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+    font-family: "Lato";
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.row{
+    margin: 0 -8px;
+}
+
+.col{
+    padding: 0 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+.text-white{
+    color: white ;!important
+}
+
+.text-center{
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+}
+
+#wrapper{
+
+}
+/* Header */
+#header{
+    background-color: #000;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+    z-index: 1;
+}
+
+#header .menu-main{
+    display: flex;
+}
+
+#header .menu-main > li > a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+
+#header .menu-main > li:hover > a{
+    background-color: green;
+    transition: 0.3s;
+    color: #000;
+}
+
+#header .menu-sub{
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+    width: 160px;
+}
+
+#header .menu-sub > li > a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    display:block;
+    line-height: 38px;
+    text-indent: 15px;
+    
+}
+
+#header .menu-sub > li:hover > a{
+    transition: 0.3s;
+    background-color: green;
+}
+
+#header .menu-main > li:hover .menu-sub{
+    display: block;
+}
+
+/* header-seach */
+.header-search{
+}
+
+.logo-search{
+    border: none;
+}
+
+.logo-search > a{
+    text-decoration: none;
+}
+
+.logo-search > a > i{
+    display: block;
+    line-height: 46px;
+    padding: 0px 23px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo-search:hover i{
+    background-color: green;
+    transition: 0.3s;
+    color: #000;
+}
+
+
+/* slider */
+#slider{
+    padding-top: 50%;
+    margin-top: 46px;
+    background: url('/w3_band/asset/images/top.jpeg') center top / cover no-repeat;
+    position: relative;
+}
+
+#slider .slider-text{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 32px 0px;
+}
+
+#slider .text-heading{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#slider .text-sub-heading{
+    margin: 15px 0px;
+}
+
+/* content */
+#content{
+
+}
+
+.content-shared{
+    width: 800px;
+    margin: 0px auto;
+    padding: 64px 0px;
+}
+
+.content-shared-heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.content-shared-sub-heading{
+    text-align: center;
+    margin: 15px 0px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* about */
+.about-text{
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.about-member{
+    padding: 32px 0px;
+}
+
+.member-name{
+    margin: 15px 0px;
+}
+
+.member-img{
+    width: 154px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #000;
+}
+
+.member-img:hover{
+    transform: scale(1.1);
+}
+
+/* Tour */
+#container-tour{
+    background-color: #000;
+}
+
+.tour-tickets{
+    padding-top: 20px;
+}
+
+.tickets-list{
+    background-color: #fff;
+}
+
+.tickets-info{
+    padding: 10px 16px;
+    color: #757575;
+}
+
+.tickets-sold-out{
+    margin-left: 16px;
+    padding: 2px 8px;
+    background-color: green;
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #000;
+}
+
+.tickets-amount{
+    float: right;
+    margin-right: 16px;
+    padding: 2px 8px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    margin-top: -2px;
+    box-shadow: 0 0 5px #000;
+}
+
+.tour-places {
+    padding: 32px 0px;
+}
+
+.places-img{
+    width: 100%;
+    display: block;
+}
+
+.places-img:hover{
+    opacity: 0.6;
+}
+
+.places-info{
+    background-color: #fff;
+    padding: 0 16px;
+}
+
+.places-name{
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+.places-time{
+    margin-bottom: 15px;
+}
+
+.places-text{
+    margin-bottom: 15px;  
+    line-height: 1.5;
+}
+
+.tickets-buy{
+    margin-bottom: 16px;
+    border: none;
+    box-shadow: 0 0 5px #000;
+}
+
+.tickets-buy > a{
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0px 15px;
+    display: inline-block;
+    line-height: 38px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tickets-buy > a:hover{
+    background-color: green;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+}
+
+/* contact */
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info > p > i.fas{
+    width: 30px;
+    text-align: center;
+}
+
+.contact-info > p > i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 10px #000;
+    background-color: green;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.contact-main{
+    padding: 32px 0;
+}
+
+.input-name-email{
+    margin-bottom: 8px;
+}
+
+.name,
+.email{
+    margin: 0px 8px;
+    border: 1px solid #ccc;
+    padding: 10px 8px;
+    font: inherit;
+}
+
+.message{
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    font: inherit;
+}
+
+.contact-send{
+    margin: 16px 0;
+    float: right;
+    border: none;
+}
+
+.contact-send > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    padding: 0 16px;
+    line-height: 38px;
+    background-color: #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.contact-send > a:hover{
+    background-color: green;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* map */
+.map{
+
+}
+
+.map-img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+/* footer */
+#footer{
+    background-color: #f1f1f1;
+}
+
+.footer-main{
+    padding: 64px 0;
+}
+
+.footer-social{
+    font-size: 24px;
+    opacity: 0.6;
+    padding: 5px 0;
+}
+
+.footer-social > i{
+    padding: 2px;
+}
+
+.footer-social > i:hover{
+    background-color: green;
+    color: #000;
+    box-shadow: 0 0 5px #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-text{
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.footer-text > a{
+    color: #000;
+    padding: 2px;
+}
+
+.footer-text > a:hover{
+    background-color: green;
+    color: #000;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #000;
+    transition: 0.3s;
+}
